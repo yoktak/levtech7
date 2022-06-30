@@ -11,7 +11,7 @@
         <h1>Blog Name</h1>
         <form action="/posts/{{ $post->id }}" method="POST">
             {{ csrf_field() }}
-            @mthod=('PUT')
+            @method('PUT')
             <div class="title">
                 <h2>Title</h2>
                 <input type="text" name="post[title]" placeholder="タイトル" value="{{ $post->title }}"/>
